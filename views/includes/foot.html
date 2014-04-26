@@ -1,0 +1,9 @@
+{% block foot %}
+    {% for js in assets.bower_js %}
+        <script src="{$js$}{$version.cache$}"></script>
+    {% endfor %}
+
+    {% for js in assets.js %}
+        <script src="{$js$}{$version.cache$}"></script>
+    {% endfor %}
+{% endblock %}

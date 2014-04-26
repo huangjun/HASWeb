@@ -1,0 +1,9 @@
+{% block head %}
+    {% for css in assets.bower_css %}
+        <link rel="stylesheet" href="{$css$}{$version.cache$}"/>
+    {% endfor %}
+
+	{% for css in assets.css %}
+        <link rel="stylesheet" href="{$css$}{$version.cache$}"/>
+    {% endfor %}
+{% endblock %}

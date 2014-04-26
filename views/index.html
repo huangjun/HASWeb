@@ -1,0 +1,23 @@
+{% extends './layouts/default.html' %}
+
+{% block title %}{$ title $}{% endblock %}
+
+{% block content %}
+    <ul class="menu">
+        <li><a href="{$path.index$}">Home</a></li>
+        <li><a href="{$path.about$}">About</a></li>
+    </ul>
+
+    <h1>{$title$}</h1>
+    <p>This is the homepage. AKA Index.</p>
+
+    <div ng-controller="MyList">
+	    <ul>
+		    <li ng-repeat="item in items">
+		    	{{item.name}}
+		        <p>{{item.snippet}}</p>
+		    </li>
+	  	</ul>
+    </div>
+
+{% endblock %}
