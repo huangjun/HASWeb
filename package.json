@@ -1,7 +1,7 @@
 {
   "name": "FirstHAS",
   "description": "Hapi + Angularjs + Swig",
-  "repository": "https://github.com/huangjun/HASWeb",
+  "repository": "https://github.com/huangjun/HASWeb.git",
   "version": "0.0.1",
   "author": "Jun Huang",
   "private": false,
