@@ -15,9 +15,11 @@ module.exports = function() {
 	    hapi: {
 	        options: {
 	            views: {
-	                path: './views',
+	                path: 'views',
 	                engines: {
-	                    html: 'swig'
+	                    html: {
+	                    	module: swig
+	                    }
 	                }
 	            }
 	        }
